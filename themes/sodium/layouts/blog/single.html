@@ -1,0 +1,44 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+
+<section class="text-center pt-5">
+  <div class="container">
+    
+
+    <article class="mb-5">
+      <span class="text-muted" style="text-transform:uppercase">{{.Date.Format "Jan 2, 2006"}} 
+        {{ if .Params.categories }}
+          <span> | Posted in 
+            {{ range .Params.categories }}
+              {{ title . }}
+            {{ end }}
+         </span>
+         {{ end }}
+       </span>
+      <h2 class="heading">{{.Title}}</h2>
+      {{ if .Params.featuredimage }}
+        <img class="my-3" src="{{.Site.BaseURL}}/images/blog/{{ .Params.featuredimage }}" alt="">
+      {{ end }}
+      <p>{{ .Content | safeHTML }}</p>
+
+      <div class="share">
+        <span class="d-inline d-sm-inline d-md-none">Share&nbsp;&nbsp;&nbsp;</span>
+        <a target="_blank" class="facebook btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}">
+          <i class="fab fa-facebook"></i> <span class="d-none d-lg-inline d-md-inline">Share on Facebook</span>
+        </a>
+        <a class="twitter btn btn-twitter" target="_blank" href="https://twitter.com/home?status={{ .Permalink }}">
+          <i class="fab fa-twitter"></i> <span class="d-none d-lg-inline d-md-inline">Share on Twitter</span>
+        </a>
+      </div>
+      {{ partial "disqus.html" . }}
+    </article>
+    
+  </div>
+
+  
+</section>
+
+
+{{ partial "footer.html" . }}
+
+{{ partial "footer-end.html" }}

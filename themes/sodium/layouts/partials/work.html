@@ -1,0 +1,32 @@
+<div class="overlay"></div>
+<span class="hoverImage">
+  <img src="" alt="" width="100%" auto="auto">
+  <div class="textHolder">
+    <span class="title"></span>
+    <span class="cross">x</span>
+  </div>
+</span>
+
+<section id="work my-5">
+  <div class="container text-center">
+    <h2 class="h2 mb-5">Work</h2>
+			<div class="row">
+				{{ range first 3 (where (where .Site.Pages "Section" "work") ".Title" "!=" "Works" ) }}      
+    			<div class="col-lg-4">
+    				<a class="workImage" data-description="{{ .Description }}" data-title="{{ .Title }}" data-url="{{.Site.BaseURL}}/images/work/{{ .Params.featuredimage }}" href="#0">
+              <img width="100%" class="my-3" src="{{.Site.BaseURL}}images/work/{{ .Params.featuredimage }}" alt="">
+            </a>
+
+            <h5 class="mt-2">{{ .Title }}</h5>
+    			</div>
+    		{{ end }}
+			</div>
+			
+  </div>
+</section>
+
+<style type="text/css">
+	a.workImage img{
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1),0 20px 8px -13px rgba(0,0,0,0.2);
+	}
+</style>

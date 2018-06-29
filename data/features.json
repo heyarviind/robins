@@ -1,0 +1,21 @@
+{
+  "title" : "Services",
+  "description" : "We're best at our services",
+  "content" : [
+    {
+      "icon" : "plane",
+      "title" : "IELTS",
+      "description" : "IDP approved Academy Best techniques ever to achieve bands more then 7 Experienced trainer from Ireland Update material from Cambridge. Online practice material. Every week mock test."
+    },
+    {
+      "icon" : "microphone",
+      "title" : "Spoken",
+      "description" : "Specialisation in speaking classes. Different way of teaching for grammar environment like abroad."
+    },
+    {
+      "icon" : "lightbulb",
+      "title" : "Immigration Consultant",
+      "description" : "We are associated with more than 400 Colleges and Universities In Canada and America along with Australia, New Zealand , Ireland , Cyprus, Singapore, Ukraine"
+    }
+  ]  
+}

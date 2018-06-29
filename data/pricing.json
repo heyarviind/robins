@@ -1,0 +1,32 @@
+{
+  "title" : "Pricing",
+  "description" : "Pricing subtitle",
+  "content" : [
+    {
+      "title" : "IELTS",
+      "price" : "₹3,500",
+      "features" : [
+        "We charge for only 40 days",
+        "Mock Test every week",
+        "Tips and tricks to crack the test"
+      ],
+      "button" : {
+        "text" : "Contact",
+        "href" : "#contact"
+      }
+    },
+    {
+      "title" : "Spoken",
+      "price" : "₹2,000",
+      "features" : [
+        "Speaking classes are charged monthly ",
+        "Personality Development",
+        "Knowledge of Abroad Culture"
+      ],
+      "button" : {
+        "text" : "Contact",
+        "href" : "#contact"
+      }
+    }
+  ]
+}

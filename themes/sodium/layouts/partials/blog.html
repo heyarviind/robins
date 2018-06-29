@@ -1,0 +1,38 @@
+<section id="blog">
+	<div class="container">
+		<h2 class="h2 mb-5 text-center">Blog</h2>
+		
+		<div class="row pb-5">
+			{{ range first 3 (where (where .Site.Pages "Section" "blog") ".Title" "!=" "Blogs" )}}  
+				<div class="col-lg-4">
+				
+					<div class="">
+						<a href="{{.Permalink}}">
+							<div style="background-size:cover;background-position:center;background-image: url('{{.Site.BaseURL}}images/blog/{{ .Params.featuredimage }}'); height: 200px;background-color:#fbfbfb;" class="rounded">
+								
+							</div>
+						</a>
+						<div class="py-3">
+							<div class="text-muted mb-3" style="text-transform:uppercase">{{.Date.Format "Jan 2, 2006"}}
+								{{ if .Params.categories }}
+								<span> | Posted in 
+								
+			            {{ range .Params.categories }}
+			              {{ title . }}
+			            {{ end }}
+			           
+			           
+			         </span>
+			         {{ end }}
+		          </div>
+							<a href="{{.Permalink}}"><h5>{{ .Title }}</h5></a>
+						</div>
+					</div>
+
+				</div>
+			{{ end }}
+
+		</div>
+	
+	</div>
+</section>
