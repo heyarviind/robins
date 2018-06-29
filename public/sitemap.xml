@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://robins.co.in/categories/</loc>
+    <loc>https://robins.co.in/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://robins.co.in/</loc>
+    <loc>https://robins.co.in/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://robins.co.in/tags/</loc>
+    <loc>https://robins.co.in/tags/</loc>
     <priority>0</priority>
   </url>
   
