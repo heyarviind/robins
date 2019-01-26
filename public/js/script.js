@@ -55,7 +55,7 @@ $(document).ready(function(){
   });
 
   //Smooth scroll
-  $("a, button").click(function(event){
+  $(" button").click(function(event){
     if(this.hash !== ""){
       event.preventDefault();
       var hash = this.hash;
